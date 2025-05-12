@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk
 # Instala Tomcat manualmente (versión 10 aquí, puedes usar 9 si prefieres)
 RUN apt-get update && \
     apt-get install -y wget unzip && \
-    wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.20/bin/apache-tomcat-10.1.20.tar.gz && \
+    wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.24/bin/apache-tomcat-10.1.24.tar.gz && \
     tar xzf apache-tomcat-10.1.20.tar.gz && \
     mv apache-tomcat-10.1.20 /opt/tomcat && \
     rm apache-tomcat-10.1.20.tar.gz
